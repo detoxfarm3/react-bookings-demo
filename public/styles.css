@@ -227,6 +227,10 @@ html {
   box-sizing: inherit;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
