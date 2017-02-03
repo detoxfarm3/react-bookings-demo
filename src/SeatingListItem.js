@@ -1,8 +1,12 @@
 import React from 'react';
 
 class SeatingListItem extends React.Component {
-  componentWillMount () {
-    this.setState(this.props.data);
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      ...this.props.data
+    };
   }
 
   componentWillReceiveProps (nextProps) {

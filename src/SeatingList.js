@@ -3,8 +3,12 @@ import SeatingListItem from './SeatingListItem';
 
 class SeatingList extends React.Component {
   // gives the component its state on initial render
-  componentWillMount () {
-    this.setState({ list: this.props.list });
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      list: this.props.list
+    };
   }
 
   componentWillReceiveProps (nextProps) {
