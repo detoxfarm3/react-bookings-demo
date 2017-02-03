@@ -43,8 +43,8 @@ class BookingForm extends React.Component {
 
     // create new array if there's no data in localStorage
     storage = storage ? JSON.parse(storage) : [];
-
     storage.push(data);
+
     localStorage.setItem('bookings', JSON.stringify(storage));
   }
 

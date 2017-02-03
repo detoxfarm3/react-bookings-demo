@@ -14,7 +14,7 @@ class SeatingPlan extends React.Component {
   update = (id) => {
     if (id) {
       this.setState({
-        tables: this.state.tables.map((el) => {
+        tables: this.state.tables.map(el => {
           // flip the seated state of the object if we have
           // an id match
           if (el.id === id) {
