@@ -15,7 +15,7 @@ class SeatingListItem extends React.Component {
 
   // passes the index of the component to the seating list to
   // update the state of the list
-  changeToSeated () {
+  changeToSeated = () => {
     this.props.callback(this.props.id);
   }
 
@@ -33,7 +33,7 @@ class SeatingListItem extends React.Component {
         <div className="seating-item__container">
           <span className="seating-item__detail">Dining on: {this.state.dining_date}</span>
           <span className="seating-item__detail">Number of covers: {this.state.covers}</span>
-          <button onClick={this.changeToSeated.bind(this)} disabled={this.state.seated}>Seated</button>
+          <button onClick={this.changeToSeated} disabled={this.state.seated}>Seated</button>
         </div>
       </li>
     );
